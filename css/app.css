@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
+html {
+  font-size: 15px;
+}
+
+*,
+*:after,
+*:before,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.container {
+  height: calc(100vh - 20px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-container {
+  width: 80%;
+  max-width: 1280px;
+  display: flex;
+}
+
+.card {
+  padding: 2.5em;
+}
+
+.card__header__icon img {
+  width: 4em;
+}
+
+.card__body {
+  height: 300px;
+}
+
+.card__body__title {
+  text-transform: uppercase;
+  font-family: "Big Shoulders Display";
+  font-size: 2.25em;
+  padding: .85em 0;
+  color: #f2f2f2;
+}
+
+.card__body__content {
+  font-family: "Lexend Deca";
+  color: rgba(255, 255, 255, 0.75);
+  font-weight: 400;
+  line-height: 1.52;
+}
+
+.card__footer .action-btn {
+  background-color: #fff;
+  font-family: "Lexend Deca";
+  padding: .6em 1.5em;
+  border-radius: 20px;
+  transition: all .1s ease-in-out;
+}
+
+.card__footer .action-btn:hover {
+  background: transparent;
+  border: 2px solid #fff;
+  color: #fff;
+}
+
+.card:first-of-type {
+  border-top-left-radius: .625em;
+  border-bottom-left-radius: .625em;
+}
+
+.card:last-of-type {
+  border-top-right-radius: .625em;
+  border-bottom-right-radius: .625em;
+}
+
+.card--yellow {
+  background: #e38826;
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.card--teal {
+  background: #006970;
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.card--green {
+  background: #004241;
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.col--yellow {
+  color: #e38826;
+}
+
+.col--teal {
+  color: #006970;
+}
+
+.col--green {
+  color: #004241;
+}
+
+.attribution {
+  height: 20px;
+  font-family: "Lexend Deca";
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: #3e52a3;
+}
+
+@media screen and (max-width: 800px) {
+  .container {
+    height: unset;
+  }
+  .card-container {
+    padding: 100px 0;
+    flex-direction: column;
+    width: 90%;
+  }
+  .card__body {
+    height: 250px;
+  }
+  .card:first-of-type {
+    border-top-left-radius: .625em;
+    border-top-right-radius: .625em;
+    border-bottom-left-radius: 0;
+  }
+  .card:last-of-type {
+    border-bottom-left-radius: .625em;
+    border-bottom-right-radius: .625em;
+    border-top-right-radius: 0;
+  }
+}
