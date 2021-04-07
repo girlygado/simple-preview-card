@@ -20,7 +20,11 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![](./screenshot.png)
+
+### Links
+
+- Live Site URL: [https://condescending-hoover-02019e.netlify.app/](https://condescending-hoover-02019e.netlify.app/)
 
 ### Built with
 
@@ -31,4 +35,4 @@ Users should be able to:
 
 ## Author
 
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/girlygado)
+- Frontend Mentor - [@girlygado](https://www.frontendmentor.io/profile/girlygado)
