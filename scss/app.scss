@@ -29,12 +29,13 @@ a {
 
 .card-container {
   width: 80%;
-  max-width: 1280px;
+  max-width: 980px;
   display: flex;
 }
 
 .card {
   padding: 2.5em;
+  min-width: 280px;
 
   &__header {
     &__icon img {
@@ -155,6 +156,20 @@ a {
       border-bottom-left-radius: .625em;
       border-bottom-right-radius: .625em;
       border-top-right-radius: 0;
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {    
+  .card {
+    padding: 2.5em 1.5em;
+
+    &__body {
+      height: unset;
+    }
+
+    &__footer {
+      margin-top: 3.5em;
     }
   }
 }
